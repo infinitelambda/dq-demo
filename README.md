@@ -24,7 +24,7 @@ dbt debug # Configure your dbt profiles.yml until it's green
 dbt deps # Install dq-tools package
 
 # Build the dbt project with storing test results
-dbt build --vars '{dq_tools_enable_store_test_results: true}' 
+dbt build --vars '{dq_tools_enable_store_test_results: true}' [--exclude package:dq_tools]
 ```
 
 ### Enable dq models and build it
@@ -36,7 +36,7 @@ dbt build --vars '{dq_tools_enable_store_test_results: true}'
     ```
   - Build it
     ```bash
-    dbt build -s ???
+    dbt build -s package:dq_tools
     ```
   - Check the docs site
     ```bash
