@@ -22,7 +22,9 @@ python3 -m poetry shell    # Enter shell
 ```bash
 dbt debug # Configure your dbt profiles.yml until it's green
 dbt deps # Install dq-tools package
-dbt build --vars '{dq_tools_enable_store_test_results: true}' # Build the dbt project with storing test results
+
+# Build the dbt project with storing test results
+dbt build --vars '{dq_tools_enable_store_test_results: true}' 
 ```
 
 ### Enable dq models and build it
