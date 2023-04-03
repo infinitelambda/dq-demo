@@ -1,10 +1,10 @@
 
 import streamlit as st
 import duckdb
-import dqtools
+from utils import dqtools
 
 st.set_page_config(layout="wide")
-conn = duckdb.connect("dashboard/duckdbdemo.duckdb")
+conn = duckdb.connect("dashboard/dq_mart.duckdb")
 
 st.markdown(
     """<style>

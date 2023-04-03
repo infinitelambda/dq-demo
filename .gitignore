@@ -2,6 +2,7 @@
 target/
 dbt_packages/
 logs/
+*.duckdb.wal
 
 
 # Byte-compiled / optimized / DLL files

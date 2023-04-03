@@ -2,7 +2,7 @@
 Demonstration of Data Quality with dbt
 
 
-![Streamlit dashboard](https://raw.githubusercontent.com/il-dat/dq-demo/main/dashboard/assets/simple-dashboard.png)
+![Streamlit dashboard](https://raw.githubusercontent.com/il-dat/dq-demo/main/assets/simple-dashboard.png)
 
 **Clone repo**
 ```
