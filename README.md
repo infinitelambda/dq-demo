@@ -1,7 +1,6 @@
 # Data Quality with dbt
 Demonstration of Data Quality with dbt
 
-
 ![Streamlit dashboard](https://raw.githubusercontent.com/il-dat/dq-demo/main/assets/simple-dashboard.png)
 
 **Clone repo**
@@ -19,42 +18,7 @@ python3 -m poetry shell    # Enter shell
 ```
 
 ## Run dbt
-```bash
-dbt debug # Configure your dbt profiles.yml until it's green
-dbt deps # Install dq-tools package
-
-# Build the dbt project with storing test results
-dbt build --vars '{dq_tools_enable_store_test_results: true}' [--exclude package:dq_tools]
-```
-
-### Enable dq models and build it
-  - Enable dq models within `dbt_project.yml` file
-    ```yaml
-    models:
-      dq_tools:
-        +enabled: true
-    ```
-  - Build it
-    ```bash
-    dbt build -s package:dq_tools
-    ```
-  - Check the docs site
-    ```bash
-    dbt docs generate && dbt docs serve
-    ```
+Check [here](/dbt/README.md)!
 
 ## Check Dashboard
-In the poetry shell, run:
-```bash
-streamlit run dashboard/dash-dqtools.py
-
-# You can now view your Streamlit app in your browser.
-
-# Local URL: http://localhost:8502
-# Network URL: http://192.168.1.5:8502
-
-# For better performance, install the Watchdog module:
-
-# $ xcode-select --install
-# $ pip install watchdog
-```
+Check [here](/dashboard/README.md)!

@@ -7,7 +7,7 @@ dq_demo:
       user: "{{ env_var('DBT_SNOWFLAKE_TEST_USER') }}"
       password: "{{ env_var('DBT_ENV_SECRET_SNOWFLAKE_TEST_PASSWORD') }}"
       role: "{{ env_var('DBT_SNOWFLAKE_TEST_ROLE') }}"
-      database: "{{ env_var('DBT_SNOWFLAKE_TEST_DATABASE') }}"
       warehouse: "{{ env_var('DBT_SNOWFLAKE_TEST_WAREHOUSE') }}"
-      schema: "{{ env_var('DBT_SCHEMA', 'dq_tools_integration_tests') }}"
+      database: dq_tools
+      schema: dq_demo_dat
       threads: 10
