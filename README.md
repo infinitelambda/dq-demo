@@ -14,5 +14,5 @@ source .venv/bin/activate
 ## Run dbt
 Check [here](/dbt/README.md)!
 
-## Check Dashboard
+## Run Dashboard
 Check [here](/dashboard/README.md)!
