@@ -1,24 +1,25 @@
 import os
-import sys
 from utils import yaml
 from pathlib import Path
 import snowflake.connector as sf
 import pandas as pd
 import duckdb
 
-DBT_PROFILE_DIR = str(Path.home() / ".dbt")
+DBT_PROFILE_DIR = str(Path.cwd() / "dbt")
 DBT_PROFILE_NAME = "dq_demo"
 
 # Read config from dbt profiles.yml
 profile_config = None
 with open(f"{DBT_PROFILE_DIR}/profiles.yml", 'r') as file:
     profile_config = yaml.load_yaml_text(file.read())
+print(profile_config)
 profile_config = profile_config.get(DBT_PROFILE_NAME, {})
 target = profile_config.get("target")
 config = profile_config.get("outputs", {}).get(target, {})
 for key, value in config.items():
     if "env_var" in str(value):
         config[key] = os.environ.get(value.split("'")[1])
+print(config)
 
 # Export table configured at args[1]
 with sf.connect(**config) as conn:

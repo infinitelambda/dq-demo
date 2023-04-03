@@ -1,2 +1,2 @@
-python ./dashboard/export_dq_marts.py
-streamlit run dashboard/dash-dqtools.py
+python dashboard/export_dq_marts.py
+streamlit run dashboard/data_quality_score.py

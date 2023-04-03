@@ -1,8 +1,7 @@
-Welcome to your new dbt project!
-
-### Using the starter project
+# dbt
 
 Try running the following commands:
+- export DBT_PROFILES_DIR=.
 - dbt run
 - dbt test
 
