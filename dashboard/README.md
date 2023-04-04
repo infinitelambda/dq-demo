@@ -21,3 +21,5 @@ Demo Data Quality Score dashboard using Streamlit & DuckDB
   # $ xcode-select --install
   # $ pip install watchdog
   ```
+
+  Live Dashboard :tada: is [HERE](https://il-dat-dq-demo-dashboarddata-quality-score-kzo18o.streamlit.app/)
