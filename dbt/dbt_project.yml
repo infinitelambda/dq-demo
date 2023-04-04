@@ -9,6 +9,7 @@ analysis-paths: ["analyses"]
 test-paths: ["tests"]
 seed-paths: ["seeds"]
 macro-paths: ["macros"]
+docs-paths: ["docs"]
 snapshot-paths: ["snapshots"]
 
 target-path: "target"  # directory which will store compiled SQL files
@@ -17,10 +18,19 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "dbt_packages"
 
 vars:
-  dbt_dq_tool_schema: DQ_TOOLS_DEMO
+  dbt_dq_tool_schema: dq_tools
 
-# on-run-start:
-#   - >
-#     {% if target.type == 'duckdb' %}
-#       create schema if not exists main;
-#     {% endif %}
+on-run-start:
+  - '{{ dq_tools.create_dq_issue_log() }}'
+
+on-run-end:
+  - '{{ dq_tools.store_test_results(results) }}'
+
+# models:
+#   dq_tools:
+#     +enabled: true
+
+# dbt docs generate && dbt docs serve
+# metrics:
+#   dq_tools:
+#     +enabled: true
