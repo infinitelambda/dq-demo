@@ -4,7 +4,7 @@ Demo Data Quality Score dashboard using Streamlit & DuckDB
 ### Export DQ MART to duckdb
   ```bash
   cd dq-demo
-  python dashboard/export_dq_marts.py
+  python dashboard/jobs/export_dq_marts.py
   ```
 
 ### Serve dashboard locally
