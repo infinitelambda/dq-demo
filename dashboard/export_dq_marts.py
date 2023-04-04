@@ -19,7 +19,7 @@ config = profile_config.get("outputs", {}).get(target, {})
 for key, value in config.items():
     if "env_var" in str(value):
         config[key] = os.environ.get(value.split("'")[1])
-print(config)
+# print(config)
 
 # Export table configured at args[1]
 with sf.connect(**config) as conn:
