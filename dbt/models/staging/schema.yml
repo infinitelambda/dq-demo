@@ -9,6 +9,11 @@ models:
           - not_null
 
   - name: stg_orders
+    tests:
+      - dq_tools.recency_db: # expect has at leat an order before daily ETL run
+          field: order_date
+          datepart: day
+          interval: 1
     columns:
       - name: order_id
         tests:
