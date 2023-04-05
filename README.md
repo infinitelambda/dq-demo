@@ -1,8 +1,6 @@
 # Data Quality with dbt
 Demonstration of Data Quality with dbt
 
-![Streamlit dashboard](https://raw.githubusercontent.com/il-dat/dq-demo/main/assets/img/simple-dashboard.png)
-
 **Tech stacks used**
 
 [![dbt](https://img.shields.io/badge/-dbt-FF694B?logo=dbt&logoColor=white&style=flat)](https://www.getdbt.com/)
@@ -10,6 +8,8 @@ Demonstration of Data Quality with dbt
 [![Snowflake](https://img.shields.io/badge/-Snowflake-2580F6?logo=Snowflake&logoColor=white&style=flat)](https://www.snowflake.com/)
 [![Streamlit](https://img.shields.io/badge/-Streamlit(plotly)-FF4B4B?logo=Streamlit&logoColor=white&style=flat)](https://www.streamlit.io/)
 [![DuckDB](https://img.shields.io/badge/-DuckDB-BCAF01?logo=DuckDB&logoColor=white&style=flat)](https://duckdb.org/)
+
+![Streamlit dashboard](https://raw.githubusercontent.com/il-dat/dq-demo/main/assets/img/simple-dashboard.png)
 
 
 # Try it locally?
