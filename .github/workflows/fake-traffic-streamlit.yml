@@ -2,7 +2,8 @@ name: Fake Streamlit Traffic to get app long live
 
 on:
   schedule:
-    - cron: '45 1 * * *' # Runs at 01:45. Actions schedules run at most every 5 minutes using UTC time
+    - cron: '45 1 * * *' 
+    # Runs at 01:45. Actions schedules run at most every 5 minutes using UTC time
 
 permissions:
   contents: read
@@ -11,5 +12,5 @@ jobs:
   run:
     runs-on: ubuntu-latest
     steps:
-    - name: Install dependencies
+    - name: Visit app [BOT]
       run: curl ${{ secrets.STREAMLIT_APP_URL_DQC }}
