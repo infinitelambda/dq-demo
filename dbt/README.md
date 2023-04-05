@@ -25,9 +25,9 @@ cd dq-demo/dbt
 
 ### Build the dbt project with storing test results:
   ```bash
-  dbt build --vars '{dq_tools_enable_store_test_results: true}' --exclude package:dq_tools
+  dbt build --exclude package:dq_tools --vars '{dq_tools_enable_store_test_results: true}'
   # OR 
-  dbt test --vars '{dq_tools_enable_store_test_results: true}' --exclude package:dq_tools
+  dbt test --exclude package:dq_tools --vars '{dq_tools_enable_store_test_results: true}'
   ```
 ### Enable dq models and build it
   - Enable dq models within `dbt_project.yml` file
