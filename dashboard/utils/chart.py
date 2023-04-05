@@ -101,8 +101,34 @@ def add_kpi_cards():
 def add_overtime_score():
     data = db.get_overtime_score_data()
     fig = go.Figure()
-    xs = [row["run_time"] for _, row in data.iterrows()]
-    ys = [row["score"] for _, row in data.iterrows()]
-    fig.add_trace(go.Scatter(x=xs, y=ys, fill="tozeroy"))
+    run_time = [row["run_time"] for _, row in data.iterrows()]
+    score = [row["score"] for _, row in data.iterrows()]
+    failed_count = [row["failed_count"] for _, row in data.iterrows()]
+
+    fig.add_trace(
+        go.Scatter(
+            name="Score",
+            x=run_time,
+            y=score,
+            fill="tozeroy",
+            mode="lines+markers+text",
+            marker=dict(color="#4d7596"),
+            text=score,
+            texttemplate="%{text:.2f}", 
+            textposition="bottom center",
+        )
+    )
+    fig.add_trace(
+        go.Scatter(
+            name="# Failed",
+            x=run_time,
+            y=failed_count,
+            mode="lines+markers+text",
+            marker=dict(color="#8A4C49"),
+            text=failed_count,
+            texttemplate="%{text:f}", 
+            textposition="top center"
+        )
+    )
     fig.update_layout(title="Data Quality over Time", height=350)
     st.plotly_chart(fig, use_container_width=True)

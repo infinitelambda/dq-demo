@@ -85,7 +85,8 @@ def get_overtime_score_data():
     return _conn.sql(
         """
         select  run_time as run_time,
-                avg(rows_passed * 100.00 / rows_processed) as score
+                avg(rows_passed * 100.00 / rows_processed) as score,
+                sum(case when rows_failed > 0 then 1 else 0 end) as failed_count
         from    BI_DQ_METRICS
         group by run_time
         order by 1
