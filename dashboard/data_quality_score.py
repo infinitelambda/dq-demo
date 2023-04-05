@@ -9,3 +9,6 @@ chart.add_overall_statistics()
 chart.add_kpi_cards()
 # Overtime Score
 chart.add_overtime_score()
+
+# Fancy stuff
+ui.felicitation()

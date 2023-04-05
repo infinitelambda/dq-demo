@@ -19,3 +19,7 @@ def st_header():
         </style>""",
         unsafe_allow_html=True,
     )
+    
+    
+def felicitation():
+    st.balloons()
