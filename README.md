@@ -1,7 +1,7 @@
 # Data Quality with dbt
 Demonstration of Data Quality with dbt
 
-![Streamlit dashboard](https://raw.githubusercontent.com/il-dat/dq-demo/main/assets/simple-dashboard.png)
+![Streamlit dashboard](https://raw.githubusercontent.com/il-dat/dq-demo/main/assets/img/simple-dashboard.png)
 
 **Clone repo and activate local env**
 ```
@@ -16,3 +16,12 @@ Check [here](/dbt/README.md)!
 
 ## Run Dashboard
 Check [here](/dashboard/README.md)!
+
+
+# Contacts
+If you have any questions, [reach out to the team](https://infinitelambda.com/contacts/) and we would be more than happy to help.
+
+Make sure to explore more technical content on the [Infinite Lambda blog](https://infinitelambda.com/category/tech-blog/).
+
+
+![Follow us on Linkedin](https://raw.githubusercontent.com/il-dat/dq-demo/main/assets/img/follow-il.jpg)
