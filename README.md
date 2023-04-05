@@ -23,5 +23,4 @@ If you have any questions, [reach out to the team](https://infinitelambda.com/co
 
 Make sure to explore more technical content on the [Infinite Lambda blog](https://infinitelambda.com/category/tech-blog/).
 
-
-![Follow us on Linkedin](https://raw.githubusercontent.com/il-dat/dq-demo/main/assets/img/follow-il.jpg)
+<img src="https://raw.githubusercontent.com/il-dat/dq-demo/main/assets/img/follow-il.jpg" alt= “” width="360" height="352">
