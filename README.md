@@ -4,7 +4,7 @@ Demonstration of Data Quality with dbt
 **Tech stacks used**
 
 [![dbt](https://img.shields.io/badge/-dbt-FF694B?logo=dbt&logoColor=white&style=flat)](https://www.getdbt.com/)
-[![dbt](https://img.shields.io/badge/package:dq_tools-FF694B?logo=dbt&logoColor=white&style=flat)](https://www.getdbt.com/)
+[![dbt-package](https://img.shields.io/badge/package:dq_tools-FF694B?logo=dbt&logoColor=white&style=flat)](https://hub.getdbt.com/infinitelambda/dq_tools/latest/)
 [![Snowflake](https://img.shields.io/badge/-Snowflake-2580F6?logo=Snowflake&logoColor=white&style=flat)](https://www.snowflake.com/)
 [![Streamlit](https://img.shields.io/badge/-Streamlit(plotly)-FF4B4B?logo=Streamlit&logoColor=white&style=flat)](https://www.streamlit.io/)
 [![DuckDB](https://img.shields.io/badge/-DuckDB-BCAF01?logo=DuckDB&logoColor=white&style=flat)](https://duckdb.org/)
