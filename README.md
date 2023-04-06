@@ -1,7 +1,9 @@
 # Data Quality with dbt
 Demonstration of Data Quality with dbt
 
-**Tech stacks used**
+[![Demo](https://img.shields.io/badge/📌-LIVE_DEMO-green?style=for-the-badge&logoWidth=40)](https://il-dat-dq-demo-dashboarddata-quality-score-kzo18o.streamlit.app/)
+
+**Tech stacks used:**
 
 [![dbt](https://img.shields.io/badge/-dbt-FF694B?logo=dbt&logoColor=white&style=flat)](https://www.getdbt.com/)
 [![dbt-package](https://img.shields.io/badge/package:dq_tools-FF694B?logo=dbt&logoColor=white&style=flat)](https://hub.getdbt.com/infinitelambda/dq_tools/latest/)
