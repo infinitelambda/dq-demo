@@ -22,4 +22,4 @@ Demo Data Quality Score dashboard using Streamlit & DuckDB
   # $ pip install watchdog
   ```
 
-  Live Dashboard :tada: is [HERE](https://il-dat-dq-demo-dashboarddata-quality-score-kzo18o.streamlit.app/)
+  Live Dashboard :tada: is [HERE](https://infinitelambda-data-quality-score.streamlit.app/)

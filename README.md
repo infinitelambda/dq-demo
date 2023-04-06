@@ -1,7 +1,7 @@
 # Data Quality with dbt
 Demonstration of Data Quality with dbt
 
-[![Demo](https://img.shields.io/badge/📌-LIVE_DEMO-green?style=for-the-badge&logoWidth=40)](https://il-dat-dq-demo-dashboarddata-quality-score-kzo18o.streamlit.app/)
+[![Demo](https://img.shields.io/badge/📌-LIVE_DEMO-green?style=for-the-badge&logoWidth=40)](https://infinitelambda-data-quality-score.streamlit.app/)
 
 **Tech stacks used:**
 
@@ -11,13 +11,13 @@ Demonstration of Data Quality with dbt
 [![Streamlit](https://img.shields.io/badge/-Streamlit(plotly)-FF4B4B?logo=Streamlit&logoColor=white&style=flat)](https://www.streamlit.io/)
 [![DuckDB](https://img.shields.io/badge/-DuckDB-BCAF01?logo=DuckDB&logoColor=white&style=flat)](https://duckdb.org/)
 
-![Streamlit dashboard](https://raw.githubusercontent.com/il-dat/dq-demo/main/assets/img/simple-dashboard.png)
+![Streamlit dashboard](https://raw.githubusercontent.com/infinitelambda/dq-demo/main/assets/img/simple-dashboard.png)
 
 
 # Try it locally?
 ## Clone repo and activate local env
 ```
-git clone git@github.com:il-dat/dq-demo.git
+git clone git@github.com:infinitelambda/dq-demo.git
 cd dq-demo
 python3 -m venv .venv
 source .venv/bin/activate
@@ -35,4 +35,4 @@ If you have any questions, [reach out to the team](https://infinitelambda.com/co
 
 Make sure to explore more technical content on the [Infinite Lambda blog](https://infinitelambda.com/category/tech-blog/).
 
-<img src="https://raw.githubusercontent.com/il-dat/dq-demo/main/assets/img/follow-il.jpg" alt= “” width="360" height="352">
+<img src="https://raw.githubusercontent.com/infinitelambda/dq-demo/main/assets/img/follow-il.jpg" alt= “” width="360" height="352">
