@@ -114,7 +114,7 @@ def add_overtime_score():
             mode="lines+markers+text",
             marker=dict(color="#4d7596"),
             text=score,
-            texttemplate="%{text:.2f}", 
+            texttemplate="%{text:.2f}",
             textposition="bottom center",
         )
     )
@@ -126,8 +126,8 @@ def add_overtime_score():
             mode="lines+markers+text",
             marker=dict(color="#8A4C49"),
             text=failed_count,
-            texttemplate="%{text:f}", 
-            textposition="top center"
+            texttemplate="%{text:f}",
+            textposition="top center",
         )
     )
     fig.update_layout(title="Data Quality over Time", height=350)
