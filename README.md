@@ -15,6 +15,10 @@ Demonstration of Data Quality with dbt
 
 
 # Try it locally?
+```
+chmod +x showme.sh
+./showme.sh
+```
 ## Clone repo and activate local env
 ```
 git clone git@github.com:infinitelambda/dq-demo.git
