@@ -94,7 +94,7 @@ def get_overtime_score_data():
         with dim_date as (
             select  cast(range as date) as date
             from    range(date '2023-04-02', current_date+1, interval 1 day)
-            -- change your range!
+            where   date <= (select max(date_trunc('day', run_time)) from bi_dq_metrics)
         )
         select      dim_date.date as run_time,
                     avg(rows_passed * 100.00 / rows_processed) as score,
