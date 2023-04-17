@@ -26,11 +26,11 @@ on-run-start:
 on-run-end:
   - '{{ dq_tools.store_test_results(results) }}'
 
-# models:
-#   dq_tools:
-#     +enabled: true
+models:
+  dq_tools:
+    +enabled: true
 
 # dbt docs generate && dbt docs serve
-# metrics:
-#   dq_tools:
-#     +enabled: true
+metrics:
+  dq_tools:
+    +enabled: true
